@@ -60,15 +60,17 @@ body {
 .main-content {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    text-align: center;
+    // justify-content: space-around;
+    // text-align: center;
+    max-width: 1500px;
 
     &__left {
         width: 32%;
+        margin-left: 100px;
         
         &--coner-ur {
             position: absolute;
-            left: 385px;
+            left: 403px;
             top: 432px;
             width: 100px;
             height: 100px;
@@ -78,7 +80,7 @@ body {
         }
         &--coner-ul {
             position: absolute;
-            left: 73px;
+            left: 91px;
             top: 432px;
             width: 100px;
             height: 100px;
@@ -88,7 +90,7 @@ body {
         }
         &--coner-dr {
             position: absolute;
-            left: 385px;
+            left: 403px;
             top: 746px;
             width: 100px;
             height: 100px;
@@ -98,7 +100,7 @@ body {
         }
         &--coner-dl {
             position: absolute;
-            left: 73px;
+            left: 91px;
             top: 746px;
             width: 100px;
             height: 100px;
@@ -113,6 +115,8 @@ body {
     }
 
     &__center {
+        margin-left: 83px;
+        width: 36%;
         content: '';
         display: block;
         width: 1px;
@@ -121,6 +125,7 @@ body {
     }
 
     &__right {
+        margin-left: 85px;
         width: 32%;
         display: flex;
         flex-direction: column;
@@ -165,6 +170,17 @@ body {
             margin: 0 auto;
             margin-top: 22px;
         }
+        &--button {
+            margin: 0 auto;
+            margin-top: 25px;
+            padding: 5px;
+            width: 120px;
+            text-decoration: none;
+            font-size: 14px;
+            border: 1px solid $color-yellow;
+            color: $color-grey;
+            text-transform: uppercase;
+            font-family: $font-open-sans;
+        }
     }
-
 }
